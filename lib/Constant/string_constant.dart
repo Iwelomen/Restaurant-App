@@ -19,7 +19,7 @@ const String noAccountText = "Don’t have an account? ";
 const String phoneNumberText = "Phone Number";
 const String nameText = "Your Name";
 const String createNewAcctText = "Create new account";
-const String alreadyHaveAcctText = "Already have an account? Log In";
+const String alreadyHaveAcctText = "Already have an account? ";
 const String signUpText = "Sıgn Up";
 
 
