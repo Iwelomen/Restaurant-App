@@ -1,11 +1,13 @@
+
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant_delivery_app/Onboarding/onboarding_bloc.dart';
-
+import 'package:restaurant_delivery_app/Screens/login-screen.dart';
 import '../Constant/asset_string.dart';
 import '../Constant/colors.dart';
-import '../Constant/constant.dart';
+import '../Constant/string_constant.dart';
+import '../Screens/create_new_account.dart';
 import 'onboarding_button.dart';
 import '../Widgets/onboarding_widget.dart';
 
@@ -38,7 +40,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           children: <Widget>[
             PageView(
               controller: pageController,
-              physics: BouncingScrollPhysics(),
+              physics: const BouncingScrollPhysics(),
               children: <Widget>[
                 OnboardWidget(
                   imageLocation: illustrationI,
@@ -82,31 +84,56 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               position: state.toDouble(),
                             ),
                             const SizedBox(height: 50),
-                            // state.toString() == "2"
-                            InkWell(
-                              onTap: () {
-                                bottomSelectedIndex += 1;
-                                pageController.animateToPage(
-                                    bottomSelectedIndex,
-                                    duration: const Duration(milliseconds: 100),
-                                    curve: Curves.linear);
-                              },
-                              child: OnboardButton(
-                                buttonText: continueText,
-                                textColor: designColor4,
-                                fontSiz: 30,
-                                color: designColor1,
-                              ),
-                            ),
-
+                            state.toString() == "2"
+                                ? GestureDetector(
+                                    onTap: () {
+                                      Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => SignUpScreen(),
+                                        ),
+                                      );
+                                    },
+                                    child: OnboardButton(
+                                      buttonText: continueText,
+                                      textColor: designColor4,
+                                      fontSiz: 30,
+                                      color: designColor1,
+                                    ),
+                                  )
+                                : GestureDetector(
+                                    onTap: () {
+                                      bottomSelectedIndex += 1;
+                                      pageController.animateToPage(
+                                          bottomSelectedIndex,
+                                          duration:
+                                              const Duration(milliseconds: 100),
+                                          curve: Curves.linear);
+                                    },
+                                    child: OnboardButton(
+                                      buttonText: continueText,
+                                      textColor: designColor4,
+                                      fontSiz: 30,
+                                      color: designColor1,
+                                    ),
+                                  ),
                             const SizedBox(
                               height: 8,
                             ),
-
-                            OnboardButton(
-                              buttonText: skipText,
-                              fontSiz: 15,
-                              textColor: designColor22,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => LoginScreen(),
+                                  ),
+                                );
+                              },
+                              child: OnboardButton(
+                                buttonText: skipText,
+                                fontSiz: 15,
+                                textColor: designColor5,
+                              ),
                             )
                           ],
                         ),

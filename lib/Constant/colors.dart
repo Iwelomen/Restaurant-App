@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 const designColor1 = Color(0xFFFD8700);
-const designColor2 = Color(0xFF2B2D33);
-const designColor3 = Color(0xFF10A5CD);
+const designColor2 = Color(0xFF0274BC);
+const designColor3 = Color(0xFFE4442A);
 const designColor4 = Color(0xFFFFFFFF);
-const designColor5 = Color(0xFF000000);
+const designColor5 = Color(0xFF5B667A);
+
+
+const designColor = Color(0xFF000000);
 const designColor6 = Color(0xFF616F80);
 const designColor7 = Color(0xFF104E5B);
 const designColor8 = Color(0xFFBDBDBD);
@@ -21,7 +24,7 @@ const designColor18 = Color(0xFF424D61);
 const designColor19 = Color(0xFF363757);
 const designColor20 = Color(0xFFE8F6FA);
 const designColor21 = Color(0xFF2B2D33);
-const designColor22 = Color(0xFF5B667A);
+
 const designColor23 = Color(0xFF1E1F4B);
 const designColor24 = Color(0xFFF5B336);
 const designColor25 = Color(0xFFFF403B);

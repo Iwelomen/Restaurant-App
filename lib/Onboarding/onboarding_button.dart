@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../Constant/colors.dart';
-import '../Constant/constant.dart';
+import '../Constant/string_constant.dart';
 
 class OnboardButton extends StatelessWidget {
   final String buttonText;
@@ -21,7 +21,7 @@ class OnboardButton extends StatelessWidget {
           width: 273,
           decoration:  BoxDecoration(
             borderRadius: const BorderRadius.all(
-              Radius.circular(30.0),
+              Radius.circular(10.0),
             ),
             color: color,
           ),
