@@ -8,7 +8,7 @@ import '../Constant/asset_string.dart';
 import '../Constant/colors.dart';
 import '../Constant/string_constant.dart';
 import '../Screens/create_new_account.dart';
-import 'onboarding_button.dart';
+import '../Widgets/onboarding_button.dart';
 import '../Widgets/onboarding_widget.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -22,7 +22,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   int bottomSelectedIndex = 0;
 
   PageController pageController =
-      PageController(initialPage: 0, keepPage: true);
+      PageController(initialPage: 0, keepPage: false);
 
   void pageChanged(int index) {
     setState(() {

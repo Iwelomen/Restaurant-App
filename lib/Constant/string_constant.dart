@@ -22,6 +22,11 @@ const String createNewAcctText = "Create new account";
 const String alreadyHaveAcctText = "Already have an account? ";
 const String signUpText = "Sıgn Up";
 
+const String locationHeadingText = "Hi, nice to meet you!";
+const String locationBodyText = "Set your location to start exploring restaurants around you";
+const String useCurrentLocationText = "Use current location";
+const String setLocationManually = "Set your location manually";
+const String locationStatementText = "We only access your location while you are using the app to improve your experience";
 
 
 

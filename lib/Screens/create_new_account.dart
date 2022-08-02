@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_delivery_app/Constant/colors.dart';
 import 'package:restaurant_delivery_app/Constant/string_constant.dart';
-import 'package:restaurant_delivery_app/Onboarding/onboarding_button.dart';
+import 'package:restaurant_delivery_app/Widgets/onboarding_button.dart';
 import 'package:restaurant_delivery_app/Screens/login-screen.dart';
 import 'package:restaurant_delivery_app/Widgets/custom_text_field.dart';
 
@@ -65,10 +65,20 @@ class SignUpScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 45),
-            OnboardButton(
-              color: designColor1,
-              buttonText: signUpText,
-              textColor: designColor4,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LoginScreen(),
+                  ),
+                );
+              },
+              child: OnboardButton(
+                color: designColor1,
+                buttonText: signUpText,
+                textColor: designColor4,
+              ),
             ),
             const SizedBox(height: 18),
             GestureDetector(
