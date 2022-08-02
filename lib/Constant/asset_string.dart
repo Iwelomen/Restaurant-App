@@ -1,7 +1,7 @@
 
-const String illustrationI = "images/food1.jpeg";
-const String illustrationII = "images/food2.jpeg";
-const String illustrationIII = "images/food3.jpeg";
+const String illustrationI = "images/restaurant.png";
+const String illustrationII = "images/food.png";
+const String illustrationIII = "images/bike.png";
 
 
 

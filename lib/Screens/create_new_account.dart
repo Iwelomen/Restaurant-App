@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:restaurant_delivery_app/Constant/colors.dart';
 import 'package:restaurant_delivery_app/Constant/string_constant.dart';
