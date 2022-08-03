@@ -28,7 +28,10 @@ const String useCurrentLocationText = "Use current location";
 const String setLocationManually = "Set your location manually";
 const String locationStatementText = "We only access your location while you are using the app to improve your experience";
 
-
+const String letsEatText = "Lets Eat !!!";
+const String restaurantOfTheWeekText = "Restaurant of the week";
+const String hengbokRestaurantText = "Hengbok Restaurant";
+const String whatAreYouCraving =  "What are you craving for ?";
 
 
 

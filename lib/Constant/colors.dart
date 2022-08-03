@@ -6,12 +6,14 @@ const designColor3 = Color(0xFFE4442A);
 const designColor4 = Color(0xFFFFFFFF);
 const designColor5 = Color(0xFF5B667A);
 const designColor6 = Color(0xFF000000);
-const designColor7 = Color(0xFFFD8700);
+const designColor7 = Color(0xFFE4442A);
+const designColor8 = Color(0xFFBDBDBD);
+const designColor9 = Color(0xFFCD1D00);
+
+
 
 
 const designColor = Color(0xFF616F80);
-const designColor8 = Color(0xFFBDBDBD);
-const designColor9 = Color(0xFF293345);
 const designColor10 = Color(0xFF94A0B4);
 const designColor11 = Color(0xFF717E95);
 const designColor12 = Color(0xFFFF0015);

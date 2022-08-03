@@ -78,7 +78,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           children: <Widget>[
                             DotsIndicator(
                               decorator: const DotsDecorator(
-                                  activeColor: designColor7,
+                                  activeColor: designColor1,
                                   color: designColor8),
                               dotsCount: pageLength,
                               position: state.toDouble(),

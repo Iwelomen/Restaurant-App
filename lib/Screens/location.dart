@@ -35,7 +35,7 @@ class LocationScreen extends StatelessWidget {
                   OnboardButton(
                     buttonText: setLocationManually,
                     fontSiz: 18,
-                    textColor: designColor7,
+                    textColor: designColor1,
                   ),
                   const SizedBox(height: 100,),
                   const Expanded(
