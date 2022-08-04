@@ -1,12 +1,12 @@
-import 'dart:ui';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:restaurant_delivery_app/Constant/asset_string.dart';
 
 import 'package:restaurant_delivery_app/Constant/colors.dart';
 import 'package:restaurant_delivery_app/Constant/string_constant.dart';
 
+import '../Widgets/craving_container.dart';
 import '../Widgets/rounded_button.dart';
 
 class HomePage extends StatelessWidget {
@@ -126,10 +126,37 @@ class HomePage extends StatelessWidget {
                       width: 190,
                     )),
               ]),
-              SizedBox(height: 18),
-              Text(
+              const SizedBox(height: 18),
+              const Text(
                 whatAreYouCraving,
                 style: TextStyle(fontSize: 16),
+              ),
+              const SizedBox(height: 17),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+
+                children: [
+                  CravingsContainer(
+                    cravingImage: Image.asset(halfPizzaImage),
+                    cravingText: pizzaText,
+                  ),
+                  SizedBox(width: 24),
+                  CravingsContainer(
+                    cravingImage: Image.asset(halfPizzaImage),
+                    cravingText: pizzaText,
+                  ),
+                  SizedBox(width: 24),
+                  CravingsContainer(
+                    cravingImage: Image.asset(halfPizzaImage),
+                    cravingText: pizzaText,
+                  ),
+                  SizedBox(width: 24),
+                  CravingsContainer(
+                    cravingImage: Image.asset(halfPizzaImage),
+                    cravingText: pizzaText,
+                  ),
+                ],
               ),
             ],
           ),

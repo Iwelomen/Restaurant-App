@@ -33,6 +33,8 @@ const String restaurantOfTheWeekText = "Restaurant of the week";
 const String hengbokRestaurantText = "Hengbok Restaurant";
 const String whatAreYouCraving =  "What are you craving for ?";
 
+const String pizzaText = "Pizza";
+
 
 
 

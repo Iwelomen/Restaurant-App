@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../Constant/colors.dart';
+
 class RoundedButton extends StatelessWidget {
   final Widget icon;
 
@@ -16,9 +18,8 @@ class RoundedButton extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(25),),
           boxShadow: [
             BoxShadow(
-                color: Colors.grey,
-                blurRadius: 2,
-                offset: Offset(1, 1)
+                color: designColor5,
+                blurRadius: 1,
             )
           ]
       ),
